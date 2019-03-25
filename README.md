@@ -11,7 +11,7 @@ verwendet werden kann. Die Ermittlung der Beiträge erfolgt parametergesteuert, 
 Das erste Mitglied (Kind) zahlt den vollen Gruppen bzw. Verbandsbeitrag (Registrierung), ab dem zweiten Mitglied einer Familie wird die Hälfte dieser Beiträge verrechnet.
 Erwachsene Mitglieder zahlen nur den Verbandsbeitrag.
 
-Mit den Knöpfen "vor" und "zurück" kann man durch die Schreiben an die einzelnen Familien durchklicken, 
+Mit den Knöpfen "vor" und "zurück" kann man durch die Schreiben an die einzelnen Familien durchklicken,
 mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine Familie nach vor.
 
 Als spezielles Feature gibt es noch am Ende des Briefs einen "Zahlen mit Code" Block, der für handelsübliche Mobile-Banking Apps verwendet werden kann.
@@ -43,8 +43,9 @@ Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 
 |Anrede|Name|Vorname1|Einschreib1|Ermäßigt1|Vorname2|Einschreib2|Ermäßigt2|Vorname3|Einschreib3|Ermäßigt3|Vorname4|Einschreib4|Ermäßigt4|Vorname5|Einschreib5|Ermäßigt5|Vorname6|Einschreib6|Ermäßigt6|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|Familie|Muster|Kain|J||Abel|J|||||||||||||
-...
+|Familie|Muster|Kain|J||Abel|J||||||||||||||
+|Familie|...|...|..|..|..|..|||||||||||||||
+
 
 Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein nichtleerer Eintrag steht, zahlt das Mitglied nur den Verbandsbeitrag.
 Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet.
