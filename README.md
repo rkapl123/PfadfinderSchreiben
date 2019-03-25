@@ -40,6 +40,7 @@ Im Blatt "Parameter" können die Parameter für die Serienbrieferstellung einges
 
 Im Blatt "Liste" werden die Familien/Personen geführt, die zur Erstellung der Schreiben herangzeogen werden.
 Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
+
 |Anrede|Name|Vorname1|Einschreib1|Ermäßigt1|Vorname2|Einschreib2|Ermäßigt2|Vorname3|Einschreib3|Ermäßigt3|Vorname4|Einschreib4|Ermäßigt4|Vorname5|Einschreib5|Ermäßigt5|Vorname6|Einschreib6|Ermäßigt6|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Familie|Muster|Kain|J||Abel|J|||||||||||||
