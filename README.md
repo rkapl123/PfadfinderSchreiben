@@ -65,7 +65,7 @@ Dann auf exportieren klicken und den Download der Datei bestätigen:
 
 Dieser Import wird mit sechs Einstellungen gesteuert:
 1. Leiter aus iGRINS übernehmen (zahlen selbst): Ja=es werden auch die Leiter übernommen und bekommen einen Mitgliedsbeitragsbrief
-2. Beginn des Pfadijahrs: Dient bei den Beschriftung im Brief
+2. Beginn des Pfadijahrs: Wird für die Beschriftungen im Brief gebraucht.
 3. Nicht importieren wenn "Ermäßigt" auf: Mitglieder mit diesen Einträgen in Spalte "Ermaessigt" werden ausgenommen.
 4. Neuregistrierungen ab: Wenn Datum in Spalte "AngelegtAm" grösser als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten.
 5. Funktionen Erwachsene Mitglieder: Diese Funktionen werden zur Unterscheidung zu den Kindern ("WI", "WÖ", "GU", "SP", "CA", "EX", "RA", "RO") herangezogen, Mitglieder mit dieser Funktion bekommen unter Ermäßigt ein "E" und zahlen nur den Verbandsbeitrag.
