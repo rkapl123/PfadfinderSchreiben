@@ -55,13 +55,13 @@ Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschr
 Hier gibt es (für Gruppen aus Niederösterreich) einen Knopf zum Importieren aus der daneben angeführten Exportdatei, die vorher aktuell aus iGRINS (Gruppen Registrierungs und Informations System) exportiert wurde:
 
 Dazu in iGrins ins Menü person/xls export navigieren:
-![Image of screenshot1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/raw/master/export.png)
+![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/export.PNG)
 
 Dort dann den Filter entsprechend einstellen (wobei ohnehin nur aktive übernommen werden):
-![Image of screenshot2](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/raw/master/exportAuswahl.png)
+![Image2](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/exportAuswahl.PNG)
 
 Dann auf exportieren klicken und den Download der Datei bestätigen:
-![Image of screenshot2](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/raw/master/excel.png)
+![Image3](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/excel.PNG)
 
 Dieser Import wird mit sechs Einstellungen gesteuert:
 1. Leiter aus iGRINS übernehmen (zahlen selbst): Ja=es werden auch die Leiter übernommen und bekommen einen Mitgliedsbeitragsbrief
