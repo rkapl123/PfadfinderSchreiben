@@ -42,25 +42,37 @@ Im Blatt "Parameter" können die Parameter für die Serienbrieferstellung einges
 Im Blatt "Liste" werden die Familien/Personen geführt, die zur Erstellung der Schreiben herangzeogen werden.
 Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 
-| Anrede  | Name   | Vorname1 | Einschreib1 | Ermäßigt1 | Vorname2 | Einschreib2 | Ermäßigt2 | ... |
-|---------|--------|----------|-------------|-----------|----------|-------------|-----------|-----|
-| Familie | Muster | Thomas   | J           |           | Maria    |             |           | ... |
-| Familie | ...    |          |             |           |          |             |           | ... |
-| ...     | ...    | ...      | ...         | ...       | ...      | ...         | ...       | ... |
+| Anrede  | Name   | Adresse                          | Vorname1 | Einschreib1 | Ermäßigt1 | Vorname2 | Einschreib2 | Ermäßigt2 | ... |
+|---------|--------|----------------------------------|----------|-------------|-----------|----------|-------------|-----------|-----|
+| Familie | Muster | Musterstrasse 8/15, Musterhausen | Thomas   | J           |           | Maria    |             |           | ... |
+| Familie | ...    | ...                              |          |             |           |          |             |           | ... |
+| ...     | ...    | ...                              | ...      | ...         | ...       | ...      | ...         | ...       | ... |
 
 
 Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein nichtleerer Eintrag steht, zahlt das Mitglied nur den Verbandsbeitrag.
 Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet.
 
-Hier gibt es auch einen Knopf zum Importieren aus der daneben angeführten iGRINS Liste (die vorher aktuell aus iGRINS exportiert wurde).
-Dieser Import wird mit vier Einstellungen gesteuert:
+Hier gibt es (für Gruppen aus Niederösterreich) einen Knopf zum Importieren aus der daneben angeführten Exportdatei, die vorher aktuell aus iGRINS (Gruppen Registrierungs und Informations System) exportiert wurde:
+
+Dazu in iGrins ins Menü person/xls export navigieren:
+![Image of screenshot1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/export.png)
+
+Dort dann den Filter entsprechend einstellen (wobei ohnehin nur aktive übernommen werden):
+![Image of screenshot2](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/exportAuswahl.png)
+
+Dann auf exportieren klicken und den Download der Datei bestätigen:
+![Image of screenshot2](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/excel.png)
+
+Dieser Import wird mit sechs Einstellungen gesteuert:
 1. Leiter aus iGRINS übernehmen (zahlen selbst): Ja=es werden auch die Leiter übernommen und bekommen einen Mitgliedsbeitragsbrief
 2. Beginn des Pfadijahrs: Dient bei den Beschriftung im Brief
 3. Nicht importieren wenn "Ermäßigt" auf: Mitglieder mit diesen Einträgen in Spalte "Ermaessigt" werden ausgenommen.
 4. Neuregistrierungen ab: Wenn Datum in Spalte "AngelegtAm" grösser als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten.
 5. Funktionen Erwachsene Mitglieder: Diese Funktionen werden zur Unterscheidung zu den Kindern ("WI", "WÖ", "GU", "SP", "CA", "EX", "RA", "RO") herangezogen, Mitglieder mit dieser Funktion bekommen unter Ermäßigt ein "E" und zahlen nur den Verbandsbeitrag.
+6. Gruppierung beim Export nach: Sortiert die iGrins Liste nach diesen beiden Spalten und gruppiert dann auch die Familien danach. Wenn die Adressen gut gepflegt sind, empfiehlt sich Adresse/Plz, ansonsten ist Nachname/Plz besser (mit der Gefahr, dass der Name doppelt in der Plz vorkommt)
 
 Wenn "Leiter übernehmen" auf Nein steht, dann werden auch alle Mitglieder mit Funktionen, die weder Kinder bzw. erwachsene Mitglieder kennzeichnen (also alle Leiter) NICHT übernommen.
+Die Übernahme aus iGRINS ist auf 6 Mitglieder pro Familie beschränkt, wenn mehr Mitglieder erwartet werden, dann muss die Breite der Liste entsprechend erweitert werden.
 
 ## Beispiel
 
