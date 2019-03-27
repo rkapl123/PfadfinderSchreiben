@@ -65,15 +65,16 @@ Dann auf exportieren klicken und den Download der Datei bestätigen:
 
 Dieser Import wird mit sechs Einstellungen gesteuert:
 1. Leiter aus iGRINS übernehmen (zahlen selbst): Ja=es werden auch die Leiter übernommen und bekommen einen Mitgliedsbeitragsbrief
-2. Beginn des Pfadijahrs: Wird für die Beschriftungen im Brief gebraucht.
+2. Pfadijahr beginnt: Jahr, in dem das aktuelle Pfadijahr begint, wird für die Beschriftungen im Brief gebraucht. Eingestellt: Vorjahr des aktuellen Jahres.
 3. Nicht importieren wenn "Ermäßigt" auf: Mitglieder mit diesen Einträgen in Spalte "Ermaessigt" werden ausgenommen.
-4. Neuregistrierungen ab: Wenn Datum in Spalte "AngelegtAm" grösser als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten.
+4. Neuregistrierungen ab: Wenn Datum in Spalte "AngelegtAm" grösser als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten; Eingestellt auf 31. Januar des Pfadijahres (siehe oben).
 5. Funktionen Erwachsene Mitglieder: Diese Funktionen werden zur Unterscheidung zu den Kindern ("WI", "WÖ", "GU", "SP", "CA", "EX", "RA", "RO") herangezogen, Mitglieder mit dieser Funktion bekommen unter Ermäßigt ein "E" und zahlen nur den Verbandsbeitrag.
-6. Gruppierung beim Export nach: Sortiert die iGrins Liste nach diesen beiden Spalten und gruppiert dann auch die Familien danach. Wenn die Adressen gut gepflegt sind, empfiehlt sich Adresse/Plz, ansonsten ist Nachname/Plz besser (mit der Gefahr, dass der Name doppelt in der Plz vorkommt)
+6. Gruppierung beim Export nach: Sortiert die iGrins Liste nach diesen beiden Spalten und gruppiert dann auch die Familien danach. Wenn die Adressen gut gepflegt sind, empfiehlt sich Adresse/Plz, ansonsten ist Nachname/Plz besser (mit der Gefahr, dass ein Name doppelt in der Plz vorkommt bzw. Personen im selben Haushalt mit verschiedenen Nachnamen nicht als eine Familie erkannt werden)
 
-Wenn "Leiter übernehmen" auf Nein steht, dann werden auch alle Mitglieder mit Funktionen, die weder Kinder bzw. erwachsene Mitglieder kennzeichnen (also alle Leiter) NICHT übernommen.
-Die Übernahme aus iGRINS ist auf 6 Mitglieder pro Familie beschränkt, wenn mehr Mitglieder erwartet werden, dann muss die Breite der Liste entsprechend erweitert werden.
+Wenn "Leiter übernehmen" auf Nein steht, dann werden alle Mitglieder mit Funktionen, die weder Kinder noch erwachsene Mitglieder (Elternrat, Unterstützer, etc.) kennzeichnen (also alle mit Leiterfunktionen) NICHT übernommen.
+Die Übernahme aus iGRINS ist aktuell auf 6 Mitglieder pro Familie beschränkt, wenn mehr benötigt werden, dann muss die Breite der Liste entsprechend erweitert werden und die Formeln im Blatt Brief, die auf die Liste bezug nehmen angepasst werden (im Wesentlichen analog zur bestehenden Formel fehlende Teile hinzugefügt werden).
 
-## Beispiel
+## technisches Blatt: Beispiel
 
-Das Blatt "Beispiel" dient nur zur einfachen Befüllung der Blätter "Liste" und "Parameter" mit Beispieldaten.
+Das Blatt "Beispiel" dient nur zur einfachen Befüllung der Blätter "Liste" und "Parameter" mit Beispieldaten, wenn auf den Knopf "Schreiben in Github Ordner" geklickt wird (Entfernt alle personen- und gruppenbezogenen Daten).
+Wird nur zu Entwicklungszwecken benötigt und kann (inklusive Knopf) entfernt werden.
