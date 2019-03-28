@@ -52,9 +52,9 @@ Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein nichtleerer Eintrag steht, zahlt das Mitglied nur den Verbandsbeitrag.
 Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet.
 
-Hier gibt es (für Gruppen aus Niederösterreich) einen Knopf zum Importieren aus der daneben angeführten Exportdatei, die vorher aktuell aus iGRINS (Gruppen Registrierungs und Informations System) exportiert wurde:
+Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe.pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
 
-Dazu in iGrins ins Menü person/xls export navigieren:
+In iGrins ins Menü person/xls export navigieren:
 ![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/export.PNG)
 
 Dort dann den Filter entsprechend einstellen (wobei ohnehin nur aktive übernommen werden):
