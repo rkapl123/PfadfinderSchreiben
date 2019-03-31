@@ -16,7 +16,7 @@ mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine 
 
 Als speziellen Zusatz gibt es noch am Ende des Briefs einen "Zahlen mit Code" Block, der für handelsübliche Mobile-Banking Apps verwendet werden kann.
 Damit können die Zahlungsdaten aus dem Brief sofort ins E-Banking übernommen (und somit sehr einfach bezahlt) werden.
-Dazu ist die Anwendung zint.exe (von http://zint.org.uk) nötig, diese wird beim Blättern mit den obigen Knöpfen mit dem Datenträger (Bereich "datenträger") aufgerufen
+Hier ist die Anwendung zint.exe (von http://zint.org.uk) nötig, diese wird beim Betätigen der obigen Knöpfen mit dem Datenträger (Bereich "datenträger") aufgerufen
 
 ## Parameter
 
