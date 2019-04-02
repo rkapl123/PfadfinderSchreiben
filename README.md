@@ -15,6 +15,9 @@ Mit den Knöpfen "vor" und "zurück" kann man durch die Schreiben an die einzeln
 mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine Familie nach vor.
 mit "PDF & vor" speichert man das gerade sichtbare Schreiben als PDF (Nach- und Vorname(n) als Dateinamen) und geht eine Familie nach vor.
 
+Ein Schaltfeld "Nachregistrierung" ist für die Halbierung (bzw. sonstwie gestaltete Teilung) des vollen Gruppenmitgliedsbeitrags vorgesehen, hier werden die Gruppenmitgliedsbeiträge für ALLE
+aktuell in der Liste befindlichen entsprechend gekürzt.
+
 Als speziellen Zusatz gibt es noch am Ende des Briefs einen "Zahlen mit Code" Block, der für handelsübliche Mobile-Banking Apps verwendet werden kann.
 Damit können die Zahlungsdaten aus dem Brief sofort ins E-Banking übernommen (und somit sehr einfach bezahlt) werden.
 Hier ist die Anwendung zint.exe (von http://zint.org.uk) nötig, diese wird beim Betätigen der obigen Knöpfen mit dem Datenträger (Bereich "datenträger") aufgerufen
@@ -53,6 +56,9 @@ Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 
 Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein nichtleerer Eintrag steht, zahlt das Mitglied nur den Verbandsbeitrag.
 Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet.
+
+Als letzte Spalte ist die im Brief ausgewiesene Summe angezeigt (die Formel dazu wird beim Importieren aus iGrins immer automatisch aus dem Bereich "CheckSumme" geholt),
+diese kann zur Gegenprüfung der Eingänge verwendet werden.
 
 Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe.pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
 
