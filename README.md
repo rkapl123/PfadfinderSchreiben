@@ -14,6 +14,15 @@ Erwachsene Mitglieder zahlen nur den Verbandsbeitrag.
 Mit den Knöpfen "vor" und "zurück" kann man durch die Schreiben an die einzelnen Familien durchklicken,
 mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine Familie nach vor.
 mit "PDF & vor" speichert man das gerade sichtbare Schreiben als PDF (Nach- und Vorname(n) als Dateinamen) und geht eine Familie nach vor.
+mit "Mail & vor" schickt man das gerade sichtbare Schreiben per E-Mail als PDF ("Mitgliedsbeitragsbrief + zeile als Dateinamen) und geht eine Familie nach vor.
+
+Der Mailversand wird mit mailsend-go (https://github.com/muquit/mailsend-go) bewerkstelligt, dazu ist der versendende Account im Range "mailuser" sowie das zugehörige Passwort im Bereich "mailpwd" einzustellen.
+Im Bereich "testmail" kann mit "ja" ein Testlauf (Versand an den versendenden Account) getätigt werden.
+Für Gmail Konten ist (für die Zeit des Versendens) der Zugriff durch weniger sichere (durch google genehmigte) Apps wie folgt zu aktivieren:
+![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/googleMailEnable.PNG)
+![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/googleMailEnable2.PNG)
+
+Nach Abschluss des Versendens empfiehlt es sich diesen Zugriff wieder zu deaktivieren.
 
 Ein Schaltfeld "Nachregistrierung" ist für die Halbierung (bzw. sonstwie gestaltete Teilung) des vollen Gruppenmitgliedsbeitrags vorgesehen, hier werden die Gruppenmitgliedsbeiträge für ALLE
 aktuell in der Liste befindlichen entsprechend gekürzt.
