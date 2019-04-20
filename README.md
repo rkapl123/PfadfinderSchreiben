@@ -22,7 +22,7 @@ Für Gmail Konten ist (für die Zeit des Versendens) der Zugriff durch weniger s
 ![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/googleMailEnable.PNG)
 ![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/googleMailEnable2.PNG)
 
-Nach Abschluss des Versendens empfiehlt es sich diesen Zugriff wieder zu deaktivieren.
+Nach Abschluss des Versendens empfiehlt es sich, diesen Zugriff wieder zu deaktivieren.
 
 Ein Schaltfeld "Nachregistrierung" ist für die Halbierung (bzw. sonstwie gestaltete Teilung) des vollen Gruppenmitgliedsbeitrags vorgesehen, hier werden die Gruppenmitgliedsbeiträge für ALLE
 aktuell in der Liste befindlichen entsprechend gekürzt.
@@ -47,7 +47,7 @@ Im Blatt "Parameter" können die Parameter für die Serienbrieferstellung einges
 - lautend auf: Name für das Konto
 - Bank: Name der Bank, bei der das Konto geführt wird
 - Adresse: Adresse der Pfadfindergruppe
-- ZVR Zahl: Zentralen Vereinsregisterzahl der Pfadfindergruppe
+- ZVR Zahl: Zentrale Vereinsregisterzahl der Pfadfindergruppe
 - www: Website der Pfadfindergruppe
 
 
