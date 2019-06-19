@@ -1,6 +1,7 @@
 # Schreiben Automatisierung Pfadfinder
 
 Die Datei Schreiben.xlsm kann zum Automatisieren diverser (v.a. Mitgliedsbeitragsbriefe) Schreiben an Mitglieder in Pfadfindervereinen genutzt werden.
+Die Datei Erinnerungsmail.xlsm ist analog dazu zum Automatisieren reiner Erinnerungsmails an Mitglieder in Pfadfindervereinen gedacht (ohne Brief-PDF, dfür sind die Stammdaten zum Prüfen verfügbar).
 
 Folgende drei Blätter sind darin wesentlich:
 
