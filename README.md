@@ -1,8 +1,8 @@
 # Automatisierung von Pfadfinder Schreiben
 
 - Schreiben.xlsm kann zum Automatisieren diverser (v.a. Mitgliedsbeitragsbriefe) Schreiben an Mitglieder in Pfadfindervereinen genutzt werden.
-- Erinnerungsmail.xlsm ist analog dazu zum Automatisieren reiner Erinnerungsmails an Mitglieder in Pfadfindervereinen gedacht (ohne Brief-PDF, dfür sind die Stammdaten zum Prüfen verfügbar).
-- BeitrittserklärungImport\iGRINS_Import.xls kann in Kombination mit einem aus BeitrittserklärungImport\BeitrittserklärungFormular.odt erstellten Beitrittserklärungformular (befüllbares PDF) von einem Emailkonto die befüllten Formulare importieren. Die importierten Datensätze können dann mit dieser Datei in iGRINS importiert werden.
+- Erinnerungsmail.xlsm ist analog dazu zum Automatisieren reiner Erinnerungsmails an Mitglieder in Pfadfindervereinen gedacht (ohne Brief-PDF, dafür sind die Stammdaten zum Prüfen verfügbar).
+- BeitrittserklärungImport\iGRINS_Import.xls kann in Kombination mit einem aus BeitrittserklärungImport\BeitrittserklärungFormular.odt erstellten Beitrittserklärungformular (befüllbares PDF) von einem Emailkonto die befüllten Formulare importieren. Diese ins Excel importierten Datensätze können dann gleich weiter in iGRINS (Gruppen Registrierungs und Informations System, http://www.noe-pfadfinder.at/igrins) importiert werden.
 
 Die Installation erfolgt einfach mit Entpacken eines der beiden assets (source code .zip oder tar.gz) im letzten Release in ein beliebiges Verzeichnis, und anschliessend Öffnen einer der drei Dateien.
 
@@ -80,7 +80,7 @@ Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschr
 Als letzte Spalte ist die im Brief ausgewiesene Summe angezeigt (die Formel dazu wird beim Importieren aus iGrins immer automatisch aus dem Bereich "CheckSumme" geholt),
 diese kann zur Gegenprüfung der Eingänge verwendet werden.
 
-Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe.pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
+Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe-pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
 
 In iGrins ins Menü person/xls export navigieren:
 ![Image3](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/export.PNG)
