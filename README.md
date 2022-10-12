@@ -1,4 +1,4 @@
-# Automatisierung von Pfadfinder Schreiben
+[![License](https://img.shields.io/github/license/rkapl123/PfadfinderSchreiben.svg)](https://github.com/rkapl123/PfadfinderSchreiben/blob/master/LICENSE)
 
 - Schreiben.xlsm kann zum Automatisieren diverser (v.a. Mitgliedsbeitragsbriefe) Schreiben an Mitglieder in Pfadfindervereinen genutzt werden.
 - Erinnerungsmail.xlsm ist analog dazu zum Automatisieren reiner Erinnerungsmails an Mitglieder in Pfadfindervereinen gedacht (ohne Brief-PDF, dafür sind die Stammdaten zum Prüfen verfügbar).
