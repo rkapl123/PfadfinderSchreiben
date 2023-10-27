@@ -67,18 +67,27 @@ Allgemeine Parameter (auch in Erinnerungsmail):
 Im Blatt "Liste" werden die Familien/Personen geführt, die zur Erstellung der Schreiben herangzeogen werden.
 Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 
-| Anrede  | Name   | Adresse                          | Vorname1 | Einschreib1 | Ermäßigt1 | Vorname2 | Einschreib2 | Ermäßigt2 | ... | Summe |
-|---------|--------|----------------------------------|----------|-------------|-----------|----------|-------------|-----------|-----|-------|
-| Familie | Muster | Musterstrasse 8/15, Musterhausen | Thomas   | J           |           | Maria    |             |           | ... |Formel |
-| Familie | ...    | ...                              |          |             |           |          |             |           | ... |wird   |
-| ...     | ...    | ...                              | ...      | ...         | ...       | ...      | ...         | ...       | ... |eingetr|
+| Anrede  | Name   | Adresse                          | Vorname1 | Einschreib1 | Ermäßigt1 | Vorname2 | Einschreib2 | Ermäßigt2 | ... | Summe |AnzKinder |AnzMitg |AnzEinschr |pfadis |
+|---------|--------|----------------------------------|----------|-------------|-----------|----------|-------------|-----------|-----|-------|----------|--------|-----------|-------|
+| Familie | Muster | Musterstrasse 8/15, Musterhausen | Thomas   | J           |           | Maria    |             |           | ... |Formeln werden eingetragen                     |
+| Familie | ...    | ...                              |          |             |           |          |             |           | ... |                                               |
+| ...     | ...    | ...                              | ...      | ...         | ...       | ...      | ...         | ...       | ... |                                               |
 
 
-Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein nichtleerer Eintrag steht, zahlt das Mitglied nur den Verbandsbeitrag.
-Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet.
+Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein "M" steht, zahlt das Mitglied nur den Registrierungsbeitrag. Wenn hier ein "E" für ehrenamtliche erwachsene Mitglieder steht, dann zahlt das Mitglied weder Registrierungsbeitrag (wird durch Gruppe übernommen) noch Gruppenmitgliedsbeitrag.
 
-Als letzte Spalte ist die im Brief ausgewiesene Summe angezeigt (die Formel dazu wird beim Importieren aus iGrins immer automatisch aus dem Bereich "CheckSumme" geholt),
-diese kann zur Gegenprüfung der Eingänge verwendet werden.
+Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet. Erwachsene Mitglieder zahlen keinen einmaligen Einschreibbetrag.
+
+Die letzten fünf Spalten sind 
+- die im Brief ausgewiesene Summe (kann zur Gegenprüfung der Eingänge verwendet werden)
+- die Anzahl der Kinder in dieser Zeile
+- die Anzahl der Mitglieder in dieser Zeile
+- die Anzahl der Ersteinschreiber in dieser Zeile
+- die gesammelten Namen der zahlenden Mitglieder in dieser Zeile
+
+Die Formeln dazu werden beim Importieren aus iGrins immer automatisch gesetzt.
+
+Wichtig für die Briefgestaltung ist, dass bei Familien mit Kindern und ehrenamtlichen Mitgliedern, die ehrenamtlichen Mitglieder immer nach den Kindern (rechts davon) eingetragen werden.
 
 Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe-pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
 
@@ -91,16 +100,16 @@ Dort dann den Filter entsprechend einstellen (wobei ohnehin nur aktive übernomm
 Dann auf exportieren klicken und den Download der Datei bestätigen:
 ![Image5](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/excel.PNG)
 
-Dieser Import wird mit sechs Einstellungen gesteuert:
-1. Leiter aus iGRINS übernehmen (zahlen selbst): Ja=es werden auch die Leiter übernommen und bekommen einen Mitgliedsbeitragsbrief
-2. Pfadijahr beginnt: Jahr, in dem das aktuelle Pfadijahr begint, wird für die Beschriftungen im Brief gebraucht. Üblicherweise wird hier das Vorjahr des aktuellen Jahres genommen (berechnet).
-3. Nicht importieren wenn "Ermäßigt" auf: Mitglieder mit diesen Einträgen in Spalte "Ermaessigt" werden ausgenommen.
-4. Neuregistrierungen ab: Wenn Datum in Spalte "AngelegtAm" grösser als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten; Hier kann der Stichtag (Monat und Tag) des Pfadijahres (siehe oben) eingestellt werden.
-5. Funktionen Erwachsene Mitglieder: Diese Funktionen werden zur Unterscheidung zu den Kindern ("WI", "WÖ", "GU", "SP", "CA", "EX", "RA", "RO") herangezogen, Mitglieder mit dieser Funktion bekommen unter Ermäßigt ein "E" und zahlen nur den Verbandsbeitrag.
-6. Gruppierung beim Export nach: Sortiert die iGrins Liste nach diesen beiden Spalten und gruppiert dann auch die Familien danach. Wenn die Adressen gut gepflegt (= exakt gleich für Familienmitglieder) sind, empfiehlt sich Adresse/Plz, ansonsten ist Nachname/Plz besser (mit der Gefahr, dass ein Name doppelt in der Plz vorkommt bzw. Personen im selben Haushalt mit verschiedenen Nachnamen nicht als eine Familie erkannt werden)
+Dieser Import wird mit den folgenden Einstellungen gesteuert:
+1. Exportfile: Namen der iGrins Exportdatei, beim Öffnen wird diese Zelle mit der aktuellsten Exportdatei im Verzeichnis befüllt.
+2. Nicht importieren wenn "Ermäßigt" auf: Mitglieder mit diesen Einträgen in Spalte "Ermaessigt" werden ausgenommen (z.b. "P" oder "PWA").
+3. Neuregistrierungen ab: Wenn das Datum in Spalte "AngelegtAm" grösser ist als dieser Wert, dann ist die einmalige Einschreibgebühr zu entrichten; Hier kann der Stichtag (Monat und Tag) des Pfadijahres (siehe oben) eingestellt werden.
+4. Funktionen ehrenamtlicher Mitglieder (Elternrat, Leiter): Diese Funktionen werden zur Unterscheidung zu den Kindern ("WI", "WÖ", "GU", "SP", "CA", "EX", "RA", "RO" -> hartcodiert) und "normalen" erwachsenen Mitgliedern ("MIT") herangezogen, Mitglieder mit dieser Funktion bekommen unter Ermäßigt ein "E" und zahlen weder Verbandsbeitrag noch Gruppenbeitrag. Leiter werden hardcodiert (like "F*" und like "AS*") ermittelt.
+5. Gruppierung beim Export nach: Sortiert die iGrins Liste nach diesen beiden Spalten und gruppiert dann auch die Familien danach. Wenn die Adressen gut gepflegt (= exakt gleich für Familienmitglieder) sind, empfiehlt sich Adresse/Plz, ansonsten ist Nachname/Plz besser (mit der Gefahr, dass ein Name doppelt in der Plz vorkommt bzw. Personen im selben Haushalt mit verschiedenen Nachnamen nicht als eine Familie erkannt werden)
 
-Wenn "Leiter übernehmen" auf Nein steht, dann werden alle Mitglieder mit Funktionen, die weder Kinder noch erwachsene Mitglieder (Elternrat, Unterstützer, etc.) kennzeichnen (also alle mit Leiterfunktionen) NICHT übernommen.
-Die Übernahme aus iGRINS ist aktuell auf 6 Mitglieder pro Familie beschränkt, wenn mehr benötigt werden, dann muss die Breite der Liste entsprechend erweitert werden und die Formeln im Blatt Brief, die auf die Liste bezug nehmen angepasst werden (im Wesentlichen analog zur bestehenden Formel fehlende Teile hinzugefügt werden).
+Die Übernahme aus iGRINS ist aktuell auf 6 Mitglieder pro Familie beschränkt, wenn mehr benötigt werden, dann muss die Breite der Liste entsprechend erweitert werden und die Formeln, die auf die Liste bezug nehmen angepasst werden (im Wesentlichen müssen analog zu den bestehenden Formeln die erweiterten Teile hinzugefügt werden).
+
+Einstellung für "Pfadijahr beginnt": das Jahr, in dem das aktuelle Pfadijahr begint, wird für die Beschriftungen im Brief gebraucht. Üblicherweise wird hier das aktuelle Jahr genommen (berechnet aus der eingestellten iGrins Datei).
 
 ### technisches Blatt: Beispiel
 
