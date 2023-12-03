@@ -2,7 +2,7 @@
 
 - Schreiben.xlsm kann zum Automatisieren diverser (v.a. Mitgliedsbeitragsbriefe) Schreiben an Mitglieder in Pfadfindervereinen genutzt werden.
 - Erinnerungsmail.xlsm ist analog dazu zum Automatisieren reiner Erinnerungsmails an Mitglieder in Pfadfindervereinen gedacht (ohne Brief-PDF, dafür sind die Stammdaten zum Prüfen verfügbar).
-- BeitrittserklärungImport\iGRINS_Import.xls kann in Kombination mit einem aus BeitrittserklärungImport\BeitrittserklärungFormular.odt erstellten Beitrittserklärungformular (befüllbares PDF) von einem Emailkonto die befüllten Formulare importieren. Diese ins Excel importierten Datensätze können dann gleich weiter in iGRINS (Gruppen Registrierungs und Informations System, http://www.noe-pfadfinder.at/igrins) importiert werden.
+- BeitrittserklärungImport\iGRINS_Import.xls kann in Kombination mit einem aus BeitrittserklärungImport\BeitrittserklärungFormular.odt erstellten Beitrittserklärungformular (befüllbares PDF) von einem Emailkonto die befüllten Formulare importieren. Diese ins Excel importierten Datensätze können dann gleich weiter in iGRINS (Gruppen Registrierungs und Informations System, [http://www.noe-pfadfinder.at/igrins](http://www.noe-pfadfinder.at/igrins)) importiert werden.
 
 Die Installation erfolgt einfach mit Entpacken eines der beiden assets (source code .zip oder tar.gz) im letzten Release in ein beliebiges Verzeichnis, und anschliessend Öffnen einer der drei Dateien.
 
@@ -22,7 +22,7 @@ mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine 
 mit "PDF & vor" speichert man das gerade sichtbare Schreiben als PDF (Nach- und Vorname(n) als Dateinamen) und geht eine Familie nach vor (nur Mitgliedsbeitragsbrief).
 mit "Mail & vor" schickt man das gerade sichtbare Schreiben per E-Mail als PDF ("Mitgliedsbeitragsbrief" + zeile als Dateinamen) und geht eine Familie nach vor.
 
-Der Mailversand wird entweder mit interaktiv mit Outlook oder mit dem Programm mailsend-go (https://github.com/muquit/mailsend-go) bewerkstelligt.
+Der Mailversand wird entweder mit interaktiv mit Outlook oder mit dem Programm mailsend-go ([https://github.com/muquit/mailsend-go](https://github.com/muquit/mailsend-go)) bewerkstelligt.
 Für mailsend-go ist der versendende Account im Range "mailuser" sowie das zugehörige Passwort im Bereich "mailpwd" einzustellen.
 Im Bereich "testmail" kann mit "ja" ein Testlauf (Versand an eine beliebig einstellbare Adresse) getätigt werden.
 Für Gmail Konten ist (für die Zeit des Versendens) der Zugriff durch weniger sichere (durch google genehmigte) Apps wie folgt zu aktivieren:
@@ -38,7 +38,7 @@ aktuell in der Liste befindlichen entsprechend gekürzt (nur Mitgliedsbeitragsbr
 
 Als speziellen Zusatz gibt es noch am Ende des Briefs einen "Zahlen mit Code" Block, der für handelsübliche Mobile-Banking Apps verwendet werden kann.
 Damit können die Zahlungsdaten aus dem Brief sofort ins E-Banking übernommen (und somit sehr einfach bezahlt) werden.
-Hier ist die Anwendung zint.exe (von http://zint.org.uk) nötig, diese wird beim Betätigen der obigen Knöpfen mit dem Datenträger (Bereich "datenträger") aufgerufen
+Hier ist die Anwendung zint.exe (von [http://zint.org.uk](http://zint.org.uk)) nötig, diese wird beim Betätigen der obigen Knöpfen mit dem Datenträger (Bereich "datenträger") aufgerufen
 
 ### Parameter
 
@@ -89,7 +89,7 @@ Die Formeln dazu werden beim Importieren aus iGrins immer automatisch gesetzt.
 
 Wichtig für die Briefgestaltung ist, dass bei Familien mit Kindern und ehrenamtlichen Mitgliedern, die ehrenamtlichen Mitglieder immer nach den Kindern (rechts davon) eingetragen werden.
 
-Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, http://www.noe-pfadfinder.at/igrins) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
+Für Nutzer von iGRINS (Gruppen Registrierungs und Informations System, [http://www.noe-pfadfinder.at/igrins](http://www.noe-pfadfinder.at/igrins)) gibt es einen Knopf zum Importieren aus einer angeführten Exportdatei, dazu muss diese vorher aus iGRINS exportiert werden:
 
 In iGrins ins Menü person/xls export navigieren:
 ![Image3](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/export.PNG)
@@ -119,8 +119,9 @@ Wird nur zu Entwicklungszwecken benötigt und kann (inklusive Knopf) entfernt we
 ## BeitrittserklärungImport\iGRINS_Import.xls
 
 Die Datei iGRINS_Import.xls im Unterverzeichnis BeitrittserklärungImport kann zum importieren von Beitrittserklärungen, die als befüllte PDF Formulare in Mails auf einem definierten Mailaccount liegen.
-Dazu werden zwei Tools verwendet, zum Herunterladen der Mail(attachments) das Programm Popclient (http://www.codeode.com/popclient.html), zum extrahieren der Daten aus den PDF-Attachments (befüllte Formulare) da Programm pdftk (https://www.pdflabs.com/tools/pdftk-server/)
-Dieser Mailaccount kann gleich beim Öffnen der Datei abgefragt werden:
+Dazu werden zwei Tools verwendet, zum Herunterladen der Mail(attachments) das Programm curl (seit Windows 10 Bestandteil von MS-Windows, für neuere Versionen siehe [https://curl.se/windows/](https://curl.se/windows/)), zum extrahieren der Daten aus den PDF-Attachments (befüllte Formulare) das Programm pdftk ([https://www.pdflabs.com/tools/pdftk-server/](https://www.pdflabs.com/tools/pdftk-server/)). Wenn das pdftk Verzeichnis nicht in den Environment-Pfad aufgenommen wurde, dann müssen libiconv2.dll und pdftk.exe ins Verzeichnis dieser Datei kopiert werden.
+
+Der definierte Mailaccount kann gleich beim Öffnen der Datei abgefragt werden:
 ![Image6](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/BeitrittserklärungImport1.png)
 
 Zum Befüllen der Datei wird auch noch ein Startindex (StartID) benötigt, der die nächste ID nach der aktuell höchsten in iGRINS darstellt (links oben einzutragen).
@@ -128,22 +129,22 @@ Weiters muss ein Präfix für den Bundesverbandschlüssel (BVKey, z.b. "3-GAB-")
 Falls man ein anderes Datum als heute zur Anlage der Datensätze in iGRINS verwenden will, kann das unter "AngelegtAm:" eingetragen werden.  
 
 Unter "server", "username", "passwort" und "attachmentverz" werden die wesentlichen parameter 
-- server: URL pop3 server, 
-- username: mailadresse/username auf dem pop3 server, 
+- server: URL imap server, 
+- username: mailadresse/username auf dem imap server, 
 - passwort: dazugehöriges passwort, 
 - attachmentverz: Verzeichnis unter dem die PDF Dateien abgelegt werden sollen (standard "Formulare")
 
-im zusammengefassten Konfigurationsfeld "configxml" für popclient.exe eingetragen. 
-Es können darüberhinaus natürlich auch noch andere parameter des Programms dort eingestellt werden (z.b. der mailserver port, oder ob die Mails vom Server gelöscht bzw. nur einmal heruntergeladen werden sollen, die momentan konfigurierten Einstellungen sind port 110, Mails werden nicht gelöscht und beliebig oft heruntergeladen):
+eingetragen. 
+Die Mails werden über IMAP von curl heruntergeladen und nicht gelöscht:
 ![Image7](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/BeitrittserklärungImport2.png)
 
-Beim Importvorgang werden die Mailattachments vom Server geholt (ins Attachment Verzeichnis) und anschliessend mit pdftk ausgelesen. Dieser Vorgang ist hardcodiert und bennötigt daher ein genau passendes Formular, das mit dem LibreOffice odt Dokument an die Gruppenbedürfnisse (Logo, diverse Angaben zu Mitgliedsbeiträgen, DSGVO, etc.) angepasst werden kann.
+Beim Importvorgang werden die PDF-attachments vom Server geholt (ins Attachment Verzeichnis) und anschliessend mit pdftk ausgelesen. Dieser Vorgang ist hardcodiert und bennötigt daher ein genau passendes Formular, das mit dem LibreOffice odt Dokument an die Gruppenbedürfnisse (Logo, diverse Angaben zu Mitgliedsbeiträgen, DSGVO, etc.) angepasst werden kann.
 Die Vorlage sollte die notwendigsten Daten (die auch zukünftigen Mitgliedern zum Ausfüllen zugemutet werden können) umfassen, wenn mehr Felder notwendig sind, dann ist sowohl das odt anzupassen, als auch der Importcode (das Ergebnis von pdftk wird vom StdOut gelesen und in ein assoziatives Array (Feldname/Feldwert paare) gespeichert, das dann in die zeilen eingetragen wird).
 
 Es werden dann auch zusätzlich Fixwerte und Formeln für abgeleitete Werte unter den Feldern ID,Art,Geschlecht,BVKey,Aktiv,Funktion,Grp-Key und AngelegtAm eingetragen, wenn diese nicht passen sollten, dann ganz unten in der (Haupt)Prozedur fillValues ändern.
 Das Feld "Geschlecht" wird nicht als einzutragendes Feld erwartet sondern mit einer hinreichend umfangreichen Datenbank von Vornamen in der Datei "Geschlecht.xls" herausgefunden. Daher ist es wichtig bei offenkundigen Fehlern bzw. nicht gefundenen Namen (dann steht "unspezifisch" als Geschlecht) die Formel einfach mit M oder W auszubessern.
 Das Feld Funktion (WI,WÖ,GU,SP,CA,EX,RA,RO) wird ebenfalls automatisch ausgefüllt und zwar mithilfe des Geschlechts und des Geburtsdatums. 
-Die Altersgrenzen der Stufen sind im Blatt "FunktionAlter" zu finden, sie entsprechen bis auf WI/WÖ den Altersstufen der PPÖ (https://ppoe.at/ueber-uns/)
+Die Altersgrenzen der Stufen sind im Blatt "FunktionAlter" zu finden, sie entsprechen bis auf WI/WÖ den Altersstufen der PPÖ [https://ppoe.at/ueber-uns/](https://ppoe.at/ueber-uns/))
 Der Bundesverbandsschlüssel wird relativ simpel mit Präfix+Jahr+ID gebildet, das gewährleistet zum einen eine Erkennung des Ersteintrittsjahres, zum anderen eine Eindeutigkeit (über Präfix und Jahr).
 
 Beim Speichern wird noch die Möglichkeit geboten, die StartID auf die nächsthöhere ID der gerade importierten zu stellen:
