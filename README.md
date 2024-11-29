@@ -22,8 +22,8 @@ mit "drucken & vor" druckt man das gerade sichtbare Schreiben aus und geht eine 
 mit "PDF & vor" speichert man das gerade sichtbare Schreiben als PDF (Nach- und Vorname(n) als Dateinamen) und geht eine Familie nach vor (nur Mitgliedsbeitragsbrief).
 mit "Mail & vor" schickt man das gerade sichtbare Schreiben per E-Mail als PDF ("Mitgliedsbeitragsbrief" + zeile als Dateinamen) und geht eine Familie nach vor.
 
-Der Mailversand wird entweder mit interaktiv mit Outlook oder mit dem Programm mailsend-go ([https://github.com/muquit/mailsend-go](https://github.com/muquit/mailsend-go)) bewerkstelligt.
-Für mailsend-go ist der versendende Account im Range "mailuser" sowie das zugehörige Passwort im Bereich "mailpwd" einzustellen.
+Der Mailversand wird entweder mit interaktiv mit Outlook oder mit dem Programm cmail.exe ([https://www.inveigle.net/cmail](https://www.inveigle.net/cmail)) bewerkstelligt.
+Für cmail.exe ist der versendende Account im Range "mailuser" sowie das zugehörige Passwort im Bereich "mailpwd" einzustellen.
 Im Bereich "testmail" kann mit "ja" ein Testlauf (Versand an eine beliebig einstellbare Adresse) getätigt werden.
 Für Gmail Konten ist (für die Zeit des Versendens) der Zugriff durch weniger sichere (durch google genehmigte) Apps wie folgt zu aktivieren:
 ![Image1](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/googleMailEnable.PNG)  
@@ -74,9 +74,9 @@ Diese können entweder manuell gewartet werden, das Layout ist wie folgt:
 | ...     | ...    | ...                              | ...      | ...         | ...       | ...      | ...         | ...       | ... |                                               |
 
 
-Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein "M" steht, zahlt das Mitglied nur den Registrierungsbeitrag. Wenn hier ein "E" für ehrenamtliche erwachsene Mitglieder steht, dann zahlt das Mitglied weder Registrierungsbeitrag (wird durch Gruppe übernommen) noch Gruppenmitgliedsbeitrag.
+Die Spalten mit "Ermäßigt" dienen zur Unterscheidung von erwachsenen Mitgliedern, wenn hier ein "M" steht, zahlt das Mitglied nur den Registrierungsbeitrag. Wenn hier ein "E" für ehrenamtliche erwachsene Mitglieder steht, dann zahlt das Mitglied weder Registrierungsbeitrag (wird durch Gruppe übernommen) noch Gruppenmitgliedsbeitrag. Bereits registrierte Mitglieder werden auch mit "E" versehen, also auch nicht im Versand berücksichtigt.
 
-Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet. Erwachsene Mitglieder zahlen keinen einmaligen Einschreibbetrag.
+Die Spalten mit "Einschreib" dienen zur Berücksichtigung des einmaligen Einschreibbetrags, wenn hier ein nichtleerer Eintrag steht, wird der unter Einschreibgebühr im Blatt "Parameter" stehende Betrag für dieses Mitglied berechnet. Erwachsene Mitglieder zahlen keinen Einschreibbetrag.
 
 Die letzten fünf Spalten sind 
 - die im Brief ausgewiesene Summe (kann zur Gegenprüfung der Eingänge verwendet werden)
@@ -135,7 +135,7 @@ Unter "server", "username", "passwort" und "attachmentverz" werden die wesentlic
 - attachmentverz: Verzeichnis unter dem die PDF Dateien abgelegt werden sollen (standard "Formulare")
 
 eingetragen. 
-Die Mails werden über IMAP von curl heruntergeladen und nicht gelöscht:
+Die Mails werden über IMAP von curl heruntergeladen und auf dem Server nicht gelöscht:
 ![Image7](https://raw.githubusercontent.com/rkapl123/PfadfinderSchreiben/master/BeitrittserklärungImport2.png)
 
 Beim Importvorgang werden die PDF-attachments vom Server geholt (ins Attachment Verzeichnis) und anschliessend mit pdftk ausgelesen. Dieser Vorgang ist hardcodiert und bennötigt daher ein genau passendes Formular, das mit dem LibreOffice odt Dokument an die Gruppenbedürfnisse (Logo, diverse Angaben zu Mitgliedsbeiträgen, DSGVO, etc.) angepasst werden kann.
